@@ -18,7 +18,7 @@ Before we start, ensure you have the following:
 
 - A GitHub account
 - Access to GitHub Codespaces (requires a GitHub account with Codespaces enabled)
-- [Tailnet](https://Tailnet.com) account
+- [Tailscale](https://tailscale.com) account
 
 ## Step 1: Forking the Repository
 
@@ -50,13 +50,13 @@ Once your Codespace is ready, you'll need to run the provided setup script to co
 2. Grant execute permissions to the setup script:
 
     ```bash
-    chmod +x ./show_Tailnet_link.sh
+    chmod +x .src/install.sh
     ```
 
 3. Run the script using:
 
     ```bash
-    ./show_Tailnet_link.sh
+    .src/install.sh
     ```
 
 4. The script will output a link. Follow the link to log in to your Tailnet account and register your machine.
