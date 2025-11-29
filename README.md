@@ -1,4 +1,4 @@
-# 🚀 Setting Up Tailnet VPN on GitHub Codespaces
+# 🚀 Setting Up Tailnet infra on for dev beta enviroment access.
 
 Welcome, brave internet traveler. You are about to combine *two nearly identical-but-not-quite* setup guides into one **ultimate**, **extra crispy**, **AI‑fused**, **sarcastically seasoned** Markdown file that finally gets the job done without missing a thing.
 
@@ -74,7 +74,7 @@ Yes, it might take a few minutes. No, staring at the progress bar won’t make i
 
 Once your Codespace awakens from its digital slumber:
 
-1. if not setup TS_AUTH_KEY just Open the terminal and:
+1. By using json config and features feature of devcontainer for testing and setup as well src/tailscale/devcontainer-feature.json we can run all automated, otherwise:
 
    ```bash
    sudo tailscale up -ssh --advertise-exit-node=true --hostname=tailnet
