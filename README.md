@@ -50,13 +50,13 @@ Once your Codespace is ready, you'll need to run the provided setup script to co
 2. Grant execute permissions to the setup script:
 
     ```bash
-    chmod +x .src/install.sh
+    chmod +x .src/tailscale/install.sh
     ```
 
 3. Run the script using:
 
     ```bash
-    .src/install.sh
+    .src/tailscale/install.sh
     ```
 
 4. The script will output a link. Follow the link to log in to your Tailnet account and register your machine.
