@@ -38,10 +38,6 @@ TAILSCALED_LOG=/var/log/tailscaled.log
   exec 1>$TAILSCALED_LOG 2>&1
   cd /
   umask 0
-  # Note: TS_DEBUG_FIREWALL_MODE: it is not recommended that users copy this
-  # setting into other environments, the feature is in test and will be formally
-  # released in the future, debug flags may later be recycled for other purposes
-  # leading to unexpected behavior.
   unset TAILSCALED_PID TAILSCALED_SOCK TAILSCALED_LOG
   export TS_DEBUG_FIREWALL_MODE=auto
   exec setsid /usr/local/sbin/tailscaled
