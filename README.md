@@ -75,6 +75,9 @@ Yes, it might take a few minutes. No, staring at the progress bar won’t make i
 Once your Codespace awakens from its digital slumber:
 
 1. Open the terminal.
+ ```bash
+sudo tailscale up -ssh --accept-routes --hostname=tailnet
+```
 
 2. Give the install script the gift of executable power:
 
