@@ -74,12 +74,15 @@ Yes, it might take a few minutes. No, staring at the progress bar won’t make i
 
 Once your Codespace awakens from its digital slumber:
 
-1. Open the terminal and just.
+1. if not setup TS_AUTH_KEY just Open the terminal and:
 
    ```bash
    sudo tailscale up -ssh --advertise-exit-node=true --hostname=tailnet
    ```
-if not work proceed to:
+This example ont set any key but if you set mension earlier you can set also CODESPACE_NAME,then proceed to:
+
+Next by example becouse repo do all with devcontainer.json
+
 2. Give the install script the gift of executable power:
 
    ```bash
