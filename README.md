@@ -76,10 +76,10 @@ Once your Codespace awakens from its digital slumber:
 
 1. Open the terminal and just.
 
- ```bash
-sudo tailscale up -ssh --accept-routes --hostname=tailnet
-```
-
+   ```bash
+   sudo tailscale up -ssh --advertise-exit-node=true --hostname=tailnet
+   ```
+if not work proceed to:
 2. Give the install script the gift of executable power:
 
    ```bash
