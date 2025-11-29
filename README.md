@@ -74,7 +74,8 @@ Yes, it might take a few minutes. No, staring at the progress bar won’t make i
 
 Once your Codespace awakens from its digital slumber:
 
-1. Open the terminal.
+1. Open the terminal and just.
+
  ```bash
 sudo tailscale up -ssh --accept-routes --hostname=tailnet
 ```
