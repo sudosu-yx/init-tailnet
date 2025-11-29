@@ -4,7 +4,7 @@ Welcome, brave internet traveler. You are about to combine *two nearly identical
 
 If you’ve ever wanted to turn a GitHub Codespace into a VPN exit node so majestic that your packets feel like they’re on vacation—this is your guide.
 
-Let’s begin.
+Let’s begin with the first baby steps in this automated flow that spans CI, CD, DevSecOps, and all those other fancy acronyms. AI packed and arutomated deployed.
 
 ---
 
@@ -25,7 +25,7 @@ Before summoning your VPN beast, ensure you possess:
 
 * A **GitHub account** (Yes. You really need one.)
 * **GitHub Codespaces** enabled (If not, bribe someone.)
-* A **Tailscale account**, the magical glue of this entire operation.
+* A **Tailscale account**, the magical glue of this entire operation. By now soon more...
 
 ---
 
