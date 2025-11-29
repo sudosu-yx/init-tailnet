@@ -15,7 +15,7 @@
         "image": "ubuntu:latest",
         "features": {
             "tailscale": {
-                "version": "1.80.2"
+                "version": "1.90.8"
             }
         }
     },
