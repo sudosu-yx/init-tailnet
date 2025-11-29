@@ -1,0 +1,12 @@
+{
+  "name": "Tailnet Codespace",
+  "runArgs": [
+    "--device=/dev/net/tun"
+  ],
+  "features": {
+    "ghcr.io/tailscale/codespace/tailscale": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "sudo tailscale up --advertise-exit-node --ssh"
+}
