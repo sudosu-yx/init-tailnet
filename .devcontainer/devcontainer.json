@@ -1,5 +1,5 @@
 {
-  "name": "tailnet",
+  "name": "releaser-infra",
   "runArgs": [
     "--device=/dev/net/tun"
   ],
