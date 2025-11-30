@@ -2,9 +2,9 @@ name: Test Devcontainer Feature
 
 on:
   push:
-    branches: [main]
+    branches: [0.0.1b/releaser-infra@tailnet-init]
   pull_request:
-    branches: [main]
+    branches: [0.0.1b/releaser-infra@tailnet-init]
   workflow_dispatch:
 
 jobs:
