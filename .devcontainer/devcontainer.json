@@ -1,5 +1,21 @@
 {
   "name": "tailnet",
+  "service": "tailnet",
+  "containerEnv": {
+    "BOOT": "mint"
+  },
+  "forwardPorts": [8006],
+  "portsAttributes": {
+    "8006": {
+      "label": "Web",
+      "onAutoForward": "notify"
+    }
+  },
+  "otherPortsAttributes": {
+    "onAutoForward": "ignore"
+  },
+  "dockerComposeFile": "codespaces.yml",
+  "initializeCommand": "docker system prune --all --force",
   "runArgs": [
     "--device=/dev/net/tun"
   ],

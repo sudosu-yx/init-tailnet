@@ -1,0 +1,21 @@
+services:
+  tailnet:
+    image: qemux/qemu
+    container_name: tailnet
+    environment:
+      BOOT: "tailnet/boot.iso"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+      - /dev/vhost-net
+      - /dev/fuse
+    device_cgroup_rules:
+      - 'c *:* rwm'
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8006:8006
+    volumes:
+      - ./tailnet:/storage
+    restart: always
+    stop_grace_period: 2m
