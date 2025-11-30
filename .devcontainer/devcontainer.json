@@ -8,5 +8,5 @@
       "version": "latest"
     }
   },
-  "postCreateCommand": "sudo tailscale up --advertise-exit-node --ssh --hostname=tailnet"
+  "postCreateCommand": "sudo tailscale up --advertise-exit-node --ssh --hostname=tailnet && sudo apt install -y ethtool"
 }
