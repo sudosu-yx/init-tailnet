@@ -2,9 +2,7 @@ services:
   qemu:
     build: .
     image: sudosu-yx/tailnet-init
-    container_name: qemu
-    environment:
-      BOOT: "proxmox"
+    container_name: node
     devices:
       - /dev/kvm
       - /dev/net/tun
