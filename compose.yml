@@ -1,7 +1,7 @@
 services:
   qemu:
     build: .
-    image: tailnet/infra
+    image: sudosu-yx/tailnet-init
     container_name: qemu
     environment:
       BOOT: "proxmox"
