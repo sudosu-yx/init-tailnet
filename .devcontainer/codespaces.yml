@@ -1,9 +1,9 @@
 services:
   qemu:
     container_name: qemu
-    image: ghcr.io/qemus/qemu
+    image: sudosu-yx/tailnet-init
     environment:
-      RAM_SIZE: "half"
+      RAM_SIZE: "max"
       DISK_SIZE: "max"
       CPU_CORES: "max"
     devices:

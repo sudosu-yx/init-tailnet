@@ -1,8 +1,8 @@
 {
-  "name": "Linux Mint",
+  "name": "Proxmox",
   "service": "qemu",
   "containerEnv": {
-    "BOOT": "mint"
+    "BOOT": "proxmox"
   },
   "forwardPorts": [8006],
   "portsAttributes": {
