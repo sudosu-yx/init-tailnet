@@ -15,6 +15,7 @@ ARG DEBCONF_NONINTERACTIVE_SEEN="true"
 RUN set -eu && \
     apt-get update && \
     apt-get --no-install-recommends -y install \
+        supervisor \
         bc \
         jq \
         xxd \
@@ -47,6 +48,7 @@ RUN set -eu && \
     dpkg -i /tmp/passt.deb && \
     apt-get clean && \
     mkdir -p /etc/qemu && \
+    touch /etc/supervisor/conf.d/supervisord.conf && \
     echo "allow br0" > /etc/qemu/bridge.conf && \
     mkdir -p /usr/share/novnc && \
     wget "https://github.com/novnc/noVNC/archive/refs/tags/v${VERSION_VNC}.tar.gz" -O /tmp/novnc.tar.gz -q --timeout=10 && \
@@ -69,9 +71,16 @@ ADD --chmod=755 "https://github.com/qemus/fiano/releases/download/v${VERSION_UTK
 VOLUME /storage
 EXPOSE 22 5900 8006
 
-ENV BOOT="alpine"
-ENV CPU_CORES="2"
-ENV RAM_SIZE="2G"
-ENV DISK_SIZE="64G"
+ENV BOOT="proxmox"
+ENV CPU_CORES="8"
+ENV DISK_SIZE="178G"
+ENV RAM_SIZE="10G"
+ENV MACHINE="q35"
+ENV KVM="Y"
+ENV GPU="Y"
+ENV DISK_FMT="qcow2"
+ENV DISK_TYPE="scsi"
+ENV DISK_IO="threads"
+ENV VM_NET_IP="10.4.20.99"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]

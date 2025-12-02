@@ -15,10 +15,10 @@ trap 'error "Status $? while: $BASH_COMMAND (line $LINENO/$BASH_LINENO)"' ERR
 : "${MACHINE:="q35"}"      # Machine selection
 : "${ALLOCATE:=""}"        # Preallocate diskspace
 : "${ARGUMENTS:=""}"       # Extra QEMU parameters
-: "${CPU_CORES:="2"}"      # Amount of CPU cores
-: "${RAM_SIZE:="2G"}"      # Maximum RAM amount
+: "${CPU_CORES:="11"}"      # Amount of CPU cores
+: "${RAM_SIZE:="12G"}"      # Maximum RAM amount
 : "${RAM_CHECK:="Y"}"      # Check available RAM
-: "${DISK_SIZE:="64G"}"    # Initial data disk size
+: "${DISK_SIZE:="178G"}"    # Initial data disk size
 : "${BOOT_MODE:=""}"       # Boot system with UEFI
 : "${BOOT_INDEX:="9"}"     # Boot index of CD drive
 : "${STORAGE:="/storage"}" # Storage folder location
